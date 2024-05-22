@@ -740,18 +740,6 @@ Next step - to try to config it as a second monitor (https://github.com/H-M-H/We
 
 ---------
 
-2023-01-17
-1) Need to kill process but donno the pid?
-`pidof %app_name`
-
----------
-
-2023-01-09
-1) Too many processes sit on one port? Wanna kill them all? 
-`sudo fuser -k %PORT%/tcp`
-
----------
-
 2023-01-06
 1) Now I can make a text-based-screenshot of Tmux pane. Prefix+Alt+P - screenshot
 
@@ -865,16 +853,6 @@ Today I learned:
 1) Erlang/Elixir have BIF and NIF.
 BIF - build-in functions
 NIF - native inplemented functions. NIF might be used when you need to use Clang in your code.
-
----------------
-
-
-2022-08-16
-
-Today I learned:
-
-1) Browser-like search in Tmux - tmux’s default key sequence to enter copy mode and begin a search of the terminal history/scrollback is pretty awkward: Ctrl + b [ Ctrl + r if you’re using the default emacs-style copy mode bindings, or Ctrl + b [ ? if you’re using the vim-style bindings.
-
 ---------------
 
 
@@ -999,14 +977,6 @@ Today I learned:
 ---------------
 
 
-2022-02-05
-no lectures
-
-Today I learned:
-
-1) GenServer in a sandbox
-
----------------
 
 
 2022-02-04
