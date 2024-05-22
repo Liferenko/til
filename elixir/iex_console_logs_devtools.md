@@ -1,15 +1,18 @@
-### Devtools console shows IEx console logs
+# Devtools console shows IEx console logs
+---
 
-```
- # config/dev
+add in `config/dev.exs`
+```elixir
   config :my_app, MyAppWeb.Endpoint,
     live_reload: [
       interval: 1000,
       patterns: [...],
 +     web_console_logger: true
     ]
+```
 
- # app.js
+add in `app.js`
+```javascript
  + window.addEventListener("phx:live_reload:attached", ({detail: reloader}) => {
 +   // enable server log streaming to client.
 +   // disable with reloader.disableServerLogs()
