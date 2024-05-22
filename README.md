@@ -10,6 +10,9 @@ inspired by [jbranchaud/til](https://github.com/jbranchaud/til?tab=readme-ov-fil
 **Tech:**
 - [Elixir](elixir/)
 - [Erlang](erlang/)
+- [Infra](infrastructure/)
+- [Rust](rust/)
+- [SQL](sql/)
 - [Vim](vim/)
 - [Unix](unix/)
 
@@ -28,63 +31,6 @@ inspired by [jbranchaud/til](https://github.com/jbranchaud/til?tab=readme-ov-fil
 
 ---
 ##### Unsorted yet
-
-Rob's boost (aka course) - https://skilstak.io/boost/start/
-
-
-
-
-## 2024-05-15 08:14
-
-how Design patterns look in Elixir: 
-
-1) Mediator
-    Examples: Phoenix Controller, Phx LiveView
-    Solutions:
-    - Funcs and modules for controlling and coordinating logic
-    - Processes for controlling and coordinating events
-
-2) Facade
-    Examples: Phx Contexts, Logger, Elixir compiler
-    Solutions: Modules prociding a simplified API to the more general facilities of a subsystem
-
-3) Strategy
-    Examples: 
-    Solutions:
-    - Pattenr matching
-    - Anon functions
-    - Interfaces from OO a.k.a Protocols in Elixir
-    -- interfaces are a mechanism for polymorphism (with upfront contract)"(c) José Valim
-    Polymorphism in Elixir:
-        Behaviour == Modules
-        State == Data
-        Mutability == Processes
-
-    "Favor object composition over class inheritance"(c) Gang of Four
-
-Source: https://www.youtube.com/watch?v=agkXUp0hCW8
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## 2024-05-14 06:07
 
 testcontainers (Elixir friendly) - https://testcontainers.com/desktop/?utm_campaign=2024-04-24-testcontainers-desktop&utm_medium=video&utm_source=youtube
@@ -207,23 +153,6 @@ Yet another intrepretation of my rule is a Boy scout rule: Leave the campground 
 Dockerfiles, .sh files, Makefiles can wrapped in Earthfile here - https://docs.earthly.dev/basics/part-1-a-simple-earthfile
 
 
-
-
-## 2024-05-02 07:38
-Erlang doc based on Hexdocs - https://erlang.org/documentation/doc-15.0-rc3/lib/stdlib-6.0/doc/html/rand.html
-
-
-
-
-## 2024-05-01 19:16
-Zen of Erlang - https://ferd.ca/the-zen-of-erlang.html
-
-
-
-
-## 2024-04-30 10:00
-Get a feedback from Roman that's we won't work together. :/ Sad but ok
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Above is moved in TIL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -232,25 +161,11 @@ Get a feedback from Roman that's we won't work together. :/ Sad but ok
 Git commit messages Policy - https://www.conventionalcommits.org/en/v1.0.0-beta.2/#:~:text=Commits%20MUST%20be%20prefixed%20with,bug%20fix%20for%20your%20application.
 
 
-
-
-## 2024-04-25 05:57
-
-for using doctest without import issue, I need to use `doctest SomeLongModuleName.SubModule, import: true`
-
-
-
 ## 2024-04-25 05:05
 
 Github scanner for HRs and pre-interview screening - https://gitroll.io
 Works meh, but it might be a ice breaker
 
-
-
-
-## 2024-04-16 15:00
-
-Erlang VM registers all nodes. I may call `epmd -names` to see all my nodes
 
 
 
@@ -276,79 +191,6 @@ Performance, profiling and all-about-the-project info for Elixir projects
 https://gitlab.com/MachinesAreUs/archeometer
 
 works unstable for existing project, but maybe I need to spend more time with it
-
-
-
-
-## 2024-03-25 17:34
-Devtools console shows IEx console logs - 
-
-```
- # config/dev
-  config :my_app, MyAppWeb.Endpoint,
-    live_reload: [
-      interval: 1000,
-      patterns: [...],
-+     web_console_logger: true
-    ]
-
- # app.js
- + window.addEventListener("phx:live_reload:attached", ({detail: reloader}) => {
-+   // enable server log streaming to client.
-+   // disable with reloader.disableServerLogs()
-+   reloader.enableServerLogs()
-+ })
-```
-
-https://www.elixirstreams.com/tips/stream_server_logs_to_console?utm_source=elixir-streams-newsletter
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -437,17 +279,6 @@ https://medium.com/@mefengl/unknown-title-a4d9400b7bf0
 useful when I need to dry-run and test some playbooks without setting any VMware or VBox (useful for mac M1)
 
 
-
-## 2024-02-19 17:02
-
-Nice explanation of OTP basic concepts - https://www.youtube.com/watch?v=ENolm5T0bkU&list=TLPQMTkwMjIwMjSk3L8IdXWFtQ&index=5
-
-
-
-
-## 2024-02-14 09:34
-
-Rust for 
 
 
 
@@ -567,42 +398,10 @@ read carefully this - deps/phoenix_live_view/lib/phoenix_live_view.ex
 
 ## 2024-02-01 11:36
 
-- Strong arrows in Elixir
-```
-$ int() -> boolean()
-def active?(state) do
-    if state > something do
-        true
-    else:
-        false
-    end
-end
-```
-
-same way usually I used it like this:
-```
-def active?(state) when is_integer(state) do
-...
-```
-
-Source - https://elixir-lang.org/blog/2023/09/20/strong-arrows-gradual-typing/
-
-
 
 
 ## 2024-01-29 11:11
 
-Phoenix has an awesome module - Naming
-`Phoenix.Naming.camelize/1` - convert "any_like_that" into "AnyLikeThat".
-Or it might be useful here 
-`Phoenix.Naming.humanize(:created_at)` -> "Created at"
-
-https://hexdocs.pm/phoenix/Phoenix.Naming.html
-
-
-
-
-## 2024-01-24 18:50
 
 pull-up resistors
 pull-down resistors
@@ -647,10 +446,6 @@ pull-down resistors
 
 
 
-## 2024-01-20 10:04
-
-if use `"+y` with selected text in Vim - you yank it in a clipboard. 
-WHAAAAT?:)
 
 
 
@@ -663,64 +458,6 @@ WHAAAAT?:)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 2023-12-14 14:45
-String.to_atom/1 is a danger
-
-```
-String. to_atom creates a new atom if one of its name wasn't use before, which is dangerous for dynamic/unknown data. String. to_existing_atom does only allow you to convert strings to atoms when the atom already exists at that point via some other means of usage of it.
-```
-
-according to it - 
-https://www.erlang.org/doc/efficiency_guide/introduction
-https://hexdocs.pm/credo/Credo.Check.Warning.UnsafeToAtom.html
-
-
-
-## 2023-12-11 14:02
-how to get a port owner PID & kill thy process
-`kill -9 $(lsof -t -i :5432) ; docker compose up -d`
-
-
-
-
-## 2023-12-04 12:46
-Book OTP guide book
-
-
-
-
-## 2023-12-04 06:53
-
-
-
-
-## 2023-12-03 11:10
-
-
----
-before Notes have been created - I used this "100daysOfSRE"
-2023-11-12
 
 When I will be on an interview again - I'd like to ask what tools company's team use in communication.
 Teams & Outlook - red flag
@@ -781,10 +518,6 @@ we may use this:
 ```
 ---
 
-2023-09-28
-1) looks like I can avoid bash scripts with Terraform Providers or K8s KinD usage (https://kind.sigs.k8s.io/docs/user/working-offline/)
-
----
 
 2023-09-13
 1) kubectl alternative? Hmm, k9s looks interesting
