@@ -2,28 +2,35 @@
 inspired by [jbranchaud/til](https://github.com/jbranchaud/til?tab=readme-ov-file)
 
 
-## 2024-05-19 11:24
+**around-tech:**
+- [Comfy life](comfy_life/)
+- [Fundrising](fundrising/)
+- [Interviews](interviews/)
 
-VIm macroses. Finally.
-1) press "q"
-2) press a letter you want to be a macro trigger. Example: w
-3) see "recording @w"
-4) do macro stuff
-5) press "q" to stop
-6) use @w to run the macro once. Use 8@w to run macro 8 times
+**Tech:**
+- [Elixir](elixir/)
+- [Erlang](erlang/)
+- [Vim](vim/)
+- [Unix](unix/)
 
 
 
 
-## 2024-05-18 19:36
+
+
+
+
+
+
+
+
+
+
+---
+##### Unsorted yet
 
 Rob's boost (aka course) - https://skilstak.io/boost/start/
 
-
-
-
-## 2024-05-17 15:06
-TJ's configs here - https://github.com/tjdevries/config.nvim/blob/master/lua/custom/plugins/dap.lua
 
 
 
@@ -216,12 +223,6 @@ Zen of Erlang - https://ferd.ca/the-zen-of-erlang.html
 
 ## 2024-04-30 10:00
 Get a feedback from Roman that's we won't work together. :/ Sad but ok
-
-## 2024-04-26 13:06
-
-Naming convention
-
-While normally I would also chose to stick to simpler name, like module.verb, the Phoenix conventions are using the noun for resource in the function names. In this particular module it is not a big deal, but generally we should stick to those conventions. Eg.: User.create_user, User.update_user, User.delete_user. Sometimes there might be different resources behind a single context module and a generic update would not work there.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Above is moved in TIL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
