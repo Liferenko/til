@@ -29,7 +29,7 @@ inspired by [jbranchaud/til](https://github.com/jbranchaud/til?tab=readme-ov-fil
 
 
 
----
+<!---
 ##### Unsorted yet
 ## 2024-05-14 06:07
 
@@ -954,63 +954,6 @@ Today I learned:
 ---------------
 
 
-2022-03-3
-no lectures
-
-Today I learned:
-
-1) Azure instances creating - az vm create -n Virma-az11 -g group-a --image Win2019Datacenter --admin-password %9383% --admin-username %jd% --location centralindia
-https://github.com/Azure/azure-cli
-
-
----------------
-
-
-2022-02-17
-no lectures
-
-Today I learned:
-
-1) gitconfig aliases. Finally! Now I can use git s, git chn, git ll
-
-
----------------
-
-
-
-
-2022-02-04
-no lectures
-
-Today I learned:
-
-1) It turns out with "iex --name bla@bla --cookie same_cookie_as_remote_node --remsh this_remote_node@and_ip_address" I can be connected to a node. Mindblowing
-2) erlangpl really works. with just ./erlangpl -n name_of_the_node -c same_cookie_as_remote_node
-
----------------
-
-
-2022-01-11
-no lectures
-
-Today I learned:
-1) An issue with root's lost password - 
-Solution:
- Reboot your computer
- Hold Shift during boot to start GRUB menu
- Highlight your image and press E to edit
- Find the line starting with "linux" and append rw init=/bin/bash at the end of that line
- Press Ctrl+X to boot.
- Type in passwd username
- Set your password.
- Type in reboot. If that doesn't work, hit Ctrl+Alt+Del
-
-2)  to add yourself in sudoers you need root password and add yourself in visudo
-
-
----------------
-
-
 2022-01-09
 no lectures
 
@@ -1069,16 +1012,6 @@ no lectures
 
 Today I learned:
 1) Docker-compose for Wordpress... is just working from a box :D That's satisying as hell :)
-
-
----------------
-
-
-2022-01-01
-no lectures
-
-Today I learned:
-1) 
 
 
 ---------------
@@ -1237,28 +1170,4 @@ Today I learned:
 4) Easy codeshare with coded in Base64 data - https://github.com/topaz/paste \ https://topaz.github.io/paste/
 5) Katacoda (kinda best learning-by-doing classes) - https://www.katacoda.com
 
-
----------------
-
-
-2021-12-06
-7th lecture in a row
-1st lecture about Gitlab
-
-Today I learned:
-1) Bash functions. Donno how to add arguments. UPD: already know :D
-2) know how put "pipes" as if-statement
-
-
----------------
-
-
-2021-12-05
-Day-off
-None
-
-Today I learned:
-1) Zines - better way to understand hard concepts
-    https://wizardzines.com/zines/bite-size-bash/
-2) Vagrant init / Vagrant up / Vagrant ssh
-
+-->
