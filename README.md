@@ -263,26 +263,6 @@ Find related subreddits by a keyword
 
 
 
-## 2024-04-12 19:00
-
-Need to specify an ssh key for certain `git clone`?
-
-Try:
-```
-ssh-agent bash -c "ssh-add ~/.ssh/mykeyhere; git clone ...."
-```
-
-
-
-
-## 2024-04-12 09:11
-How to define a node in global 
-
-`GenServer.start_link(__MODULE__, nil, name: {:global, __MODULE__})`
-
-
-
-
 ## 2024-04-05 16:25
 
 List of all Membrane Plugins here - https://github.com/membraneframework/membrane_core/#All-packages
