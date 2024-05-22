@@ -1,5 +1,4 @@
 # Devtools console shows IEx console logs
----
 
 add in `config/dev.exs`
 ```elixir

@@ -1,12 +1,11 @@
 # Comfy chairs
----
 
 It's been 10th year of endless searching for the most comfortable work-oriented butt&back-friendly furniture
 
 **Found in Ankara, Turkyie**
 
 ![Ankara chair in cafe](./img/ankara_comfy_chair_photo.jpeg)
-![Ankara chair in cafe](./img/ankara_comfy_chair_photo2.jpeg)
+![Ankara chair in cafe](./img/ankara_comfy_chair_photo_2.jpeg)
 
 ---
 

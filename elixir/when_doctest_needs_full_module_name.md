@@ -1,8 +1,8 @@
-### When doctest wants module's fullname
+# When doctest wants module's fullname
 
 for using doctest without import issue, I need to use `doctest SomeLongModuleName.SubModule, import: true`
 
-##### without import
+#### without import
 ```elixir
 defmodule KVServer.Command do
   @doc ~S"""
@@ -20,7 +20,7 @@ defmodule KVServer.Command do
 end
 ```
 
-##### with import
+#### with import
 ```elixir
 # file test/.../command_test.exs
 

@@ -1,4 +1,4 @@
-### How Design patterns look in Elixir: 
+# How Design patterns look in Elixir: 
 
 1) Mediator
     Examples: Phoenix Controller, Phx LiveView
