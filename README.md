@@ -2,11 +2,6 @@
 inspired by [jbranchaud/til](https://github.com/jbranchaud/til?tab=readme-ov-file)
 
 
-**around-tech:**
-- [Comfy life](comfy_life/)
-- [Fundrising](fundrising/)
-- [Interviews](interviews/)
-
 **Tech:**
 - [Elixir](elixir/)
 - [Erlang](erlang/)
@@ -16,6 +11,12 @@ inspired by [jbranchaud/til](https://github.com/jbranchaud/til?tab=readme-ov-fil
 - [Vim](vim/)
 - [Unix](unix/)
 
+
+**Around-tech:**
+- [Comfy life](comfy_life/)
+- [Fundrising](fundrising/)
+- [Interviews](interviews/)
+- [Our body](our_body/)
 
 
 
