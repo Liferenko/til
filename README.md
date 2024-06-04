@@ -3,6 +3,7 @@ inspired by [jbranchaud/til](https://github.com/jbranchaud/til?tab=readme-ov-fil
 
 
 **Tech:**
+- [CSS](css/)
 - [Elixir](elixir/)
 - [Erlang](erlang/)
 - [Infra](infrastructure/)
