@@ -26,10 +26,34 @@ FROM (
     , LAG(people, 1) OVER (ORDER BY id) pre
     , LEAD(people, 1) OVER (ORDER BY id) next
     , LEAD(people, 2) OVER (ORDER BY id) next_next
+    FROM Stadium
 ) wdw_func
 WHERE (people >= 50 AND wdw_func.pre_pre >= 50 AND wdw_func.pre >= 50)
 OR (people >= 50 AND wdw_func.pre >= 50 AND wdw_func.next >= 50)
 OR (people >= 50 AND wdw_func.next >= 50 AND wdw_func.next_next >= 50)
 ```
 
-Source: https://leetcode.com/problems/human-traffic-of-stadium/solutions/911779/mysql-use-window-function-for-big-data
+faster version using WITH:
+```sql
+WITH wdw AS (
+    select id
+    , visit_date
+    , people
+    , LAG(people, 2) OVER (ORDER BY id ASC) pre2
+    , LAG(people, 1) OVER (ORDER BY id ASC) pre
+    , LEAD(people, 1) OVER (ORDER BY id ASC) nxt
+    , LEAD(people, 2) OVER (ORDER BY id ASC) nxt2
+    from Stadium
+)
+select id
+    , visit_date
+    , people
+from wdw
+where (people >= 100 AND wdw.pre2 >= 100 AND wdw.pre >= 100)
+OR (people >= 100 AND wdw.pre >= 100 AND wdw.nxt >= 100)
+OR (people >= 100 AND wdw.nxt >= 100 AND wdw.nxt2 >= 100);
+```
+
+Source: 
+- LEAD in PostgreSQL - https://www.postgresqltutorial.com/postgresql-window-function/postgresql-lead-function/
+- https://leetcode.com/problems/human-traffic-of-stadium/solutions/911779/mysql-use-window-function-for-big-data
