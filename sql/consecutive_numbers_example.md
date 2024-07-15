@@ -33,7 +33,7 @@ OR (people >= 50 AND wdw_func.pre >= 50 AND wdw_func.next >= 50)
 OR (people >= 50 AND wdw_func.next >= 50 AND wdw_func.next_next >= 50)
 ```
 
-faster version using WITH:
+alternative version using WITH:
 ```sql
 WITH wdw AS (
     select id
