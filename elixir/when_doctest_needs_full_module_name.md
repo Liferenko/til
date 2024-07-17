@@ -24,7 +24,7 @@ end
 ```elixir
 # file test/.../command_test.exs
 
-defmodule KVServer.Command do
+defmodule KVServer.CommandTest do
   doctest KVServer.Command, import: true
   ...
 end
