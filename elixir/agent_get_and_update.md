@@ -20,3 +20,13 @@ in this example get_and_update/2 did 2 valuable actions:
 
 
 It is kind of obvious but still damn interesting, if you ask me :)
+
+## named Agent
+
+Looks easier than Registry-based. Just a name looks cool
+```elixir
+{:ok, pid} = Agent.start_link(fn -> "Fin." end, name: :stoppable)
+
+Agent.stop(:stoppable)
+```
+
