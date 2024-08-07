@@ -1,4 +1,4 @@
-## Coerse
+## Coerse vs Coax
 
 
 coerce
@@ -8,3 +8,9 @@ coerce
 Example:
 A String can be coerced into a slice by prefacing it with a &
 
+
+---
+
+coax(ed)
+/kəʊks/
+- gently or persistently persuade (someone) to do something
