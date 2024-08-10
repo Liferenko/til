@@ -5,3 +5,10 @@
 - ... milestones evaporation
 - tasks decomposition
 - marketing goals setting
+
+<!-- - milestone setting -->
+<!-- - VC and accelerator programms applying -->
+<!-- - feet-getting-wet strategy in Google Adwords / Bing -->
+<!-- - creatives for Ads -->
+<!-- - texts for posts -->
+<!-- - pivot process brainstorming (when current idea is dead and a company needs to pivot) -->
