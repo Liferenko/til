@@ -25,3 +25,4 @@ If two such transactions concurrently try to change the balance of account 12345
 
 
 Read more here - https://www.postgresql.org/docs/current/transaction-iso.html
+Youtube video (in ru) - https://www.youtube.com/watch?v=yVlCjzJAOOo
