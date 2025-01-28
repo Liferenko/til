@@ -1,0 +1,7 @@
+## `feature/branchname`
+
+normally if I use `git worktree add feature/new_branch_name_here` - it's been created new branch `new_branch_name_here` as a part of directory `feature`. And, I agree, it makes sense. 
+
+But for our projects we use `prefix/branch_name` policy and the name should be with a prefix. How to do that?
+
+`git worktree add -b feature/new_branch_name_here feature/new_branch_name_here
