@@ -19,7 +19,8 @@ inspired by [jbranchaud/til](https://github.com/jbranchaud/til?tab=readme-ov-fil
 - [Fundrising](fundrising/)
 - [Interviews](interviews/)
 - [Our body](our_body/)
-- [My DJ mixes](dj/)
+- [Out mind](our_mind/)
+[-](-) [My DJ mixes](dj/)
 
 
 
