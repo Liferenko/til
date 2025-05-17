@@ -15,6 +15,7 @@ inspired by [jbranchaud/til](https://github.com/jbranchaud/til?tab=readme-ov-fil
 
 
 **Around-tech:**
+- [Accounting](accounting/)
 - [Comfy life](comfy_life/)
 - [Fundrising](fundrising/)
 - [Interviews](interviews/)
