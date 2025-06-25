@@ -12,6 +12,8 @@ It might be slower, but highly safe and will endure;
 - async messaging. Process A sends a message to Process B's mailbox without any validation (whats inside of the message, does mailbox exist etc). Process B reads from own mailbox. 
 
 
+(I paused on a page 184 of 692)
+
 
 
 ---
