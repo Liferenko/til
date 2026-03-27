@@ -28,8 +28,21 @@ inspired by [jbranchaud/til](https://github.com/jbranchaud/til?tab=readme-ov-fil
 
 
 
+- Drop watering for 14 days
 
+20 drop = 1 ml
+1 drop - 2.19-2.27 min
+25-30 drops per hour
+250-300 10 hours
+600-720 drops per day
+30-35 ml per day
+450-525 ml per 15 days per one plant
 
+4050-4750 ml for all 9 plants
+
+option 1 - 1 giant 5L bottle
+option 2 - 2 x 5L bottles
+option 3 - individual pack with 0.5 L 
 
 
 
